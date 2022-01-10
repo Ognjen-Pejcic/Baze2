@@ -1,0 +1,74 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "UserDefinedTypes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/UserDefinedTypes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserDefinedTypes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UserDefinedTypes/1.0.0": {
+      "type": "project",
+      "path": "../UserDefinedTypes/UserDefinedTypes.csproj",
+      "msbuildProject": "../UserDefinedTypes/UserDefinedTypes.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "UserDefinedTypes >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\pejci\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\pejci\\source\\repos\\Baze2\\Domen\\Domen.csproj",
+      "projectName": "Domen",
+      "projectPath": "C:\\Users\\pejci\\source\\repos\\Baze2\\Domen\\Domen.csproj",
+      "packagesPath": "C:\\Users\\pejci\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pejci\\source\\repos\\Baze2\\Domen\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\pejci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "projectReferences": {
+            "C:\\Users\\pejci\\source\\repos\\Baze2\\UserDefinedTypes\\UserDefinedTypes.csproj": {
+              "projectPath": "C:\\Users\\pejci\\source\\repos\\Baze2\\UserDefinedTypes\\UserDefinedTypes.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "targetAlias": "net472",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

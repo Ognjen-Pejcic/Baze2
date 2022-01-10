@@ -1,0 +1,13 @@
+C:\Users\pejci\source\repos\Baze2\Kontroler\obj\Debug\Kontroler.csproj.CoreCompileInputs.cache
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Debug\Kontroler.dll
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Debug\Kontroler.pdb
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Debug\Domen.dll
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Debug\Domen.pdb
+C:\Users\pejci\source\repos\Baze2\Kontroler\obj\Debug\Kontroler.csproj.AssemblyReference.cache
+C:\Users\pejci\source\repos\Baze2\Kontroler\obj\Debug\Kontroler.csproj.CopyComplete
+C:\Users\pejci\source\repos\Baze2\Kontroler\obj\Debug\Kontroler.dll
+C:\Users\pejci\source\repos\Baze2\Kontroler\obj\Debug\Kontroler.pdb
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Debug\System.Data.SqlClient.dll
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Debug\System.Data.SqlClient.xml
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Debug\DbBroker.dll
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Debug\DbBroker.pdb

@@ -1,0 +1,12 @@
+C:\Users\pejci\source\repos\Baze2\Domen\obj\Debug\net472\Domen.csproj.AssemblyReference.cache
+C:\Users\pejci\source\repos\Baze2\Domen\obj\Debug\net472\Domen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pejci\source\repos\Baze2\Domen\obj\Debug\net472\Domen.AssemblyInfoInputs.cache
+C:\Users\pejci\source\repos\Baze2\Domen\obj\Debug\net472\Domen.AssemblyInfo.cs
+C:\Users\pejci\source\repos\Baze2\Domen\obj\Debug\net472\Domen.csproj.CoreCompileInputs.cache
+C:\Users\pejci\source\repos\Baze2\Domen\bin\Debug\net472\Domen.dll
+C:\Users\pejci\source\repos\Baze2\Domen\bin\Debug\net472\Domen.pdb
+C:\Users\pejci\source\repos\Baze2\Domen\bin\Debug\net472\UserDefinedTypes.dll
+C:\Users\pejci\source\repos\Baze2\Domen\bin\Debug\net472\UserDefinedTypes.pdb
+C:\Users\pejci\source\repos\Baze2\Domen\obj\Debug\net472\Domen.csproj.CopyComplete
+C:\Users\pejci\source\repos\Baze2\Domen\obj\Debug\net472\Domen.dll
+C:\Users\pejci\source\repos\Baze2\Domen\obj\Debug\net472\Domen.pdb

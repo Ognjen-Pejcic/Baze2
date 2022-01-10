@@ -1,0 +1,11 @@
+C:\Users\pejci\source\repos\Baze2\DbBroker\bin\Debug\DbBroker.dll
+C:\Users\pejci\source\repos\Baze2\DbBroker\bin\Debug\DbBroker.pdb
+C:\Users\pejci\source\repos\Baze2\DbBroker\bin\Debug\Domen.dll
+C:\Users\pejci\source\repos\Baze2\DbBroker\bin\Debug\Domen.pdb
+C:\Users\pejci\source\repos\Baze2\DbBroker\obj\Debug\DbBroker.csproj.CoreCompileInputs.cache
+C:\Users\pejci\source\repos\Baze2\DbBroker\obj\Debug\DbBroker.csproj.CopyComplete
+C:\Users\pejci\source\repos\Baze2\DbBroker\obj\Debug\DbBroker.dll
+C:\Users\pejci\source\repos\Baze2\DbBroker\obj\Debug\DbBroker.pdb
+C:\Users\pejci\source\repos\Baze2\DbBroker\bin\Debug\System.Data.SqlClient.dll
+C:\Users\pejci\source\repos\Baze2\DbBroker\bin\Debug\System.Data.SqlClient.xml
+C:\Users\pejci\source\repos\Baze2\DbBroker\obj\Debug\DbBroker.csproj.AssemblyReference.cache

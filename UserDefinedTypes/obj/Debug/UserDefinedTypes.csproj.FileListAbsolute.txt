@@ -1,0 +1,5 @@
+C:\Users\pejci\source\repos\Baze2\UserDefinedTypes\bin\Debug\UserDefinedTypes.dll
+C:\Users\pejci\source\repos\Baze2\UserDefinedTypes\bin\Debug\UserDefinedTypes.pdb
+C:\Users\pejci\source\repos\Baze2\UserDefinedTypes\obj\Debug\UserDefinedTypes.csproj.CoreCompileInputs.cache
+C:\Users\pejci\source\repos\Baze2\UserDefinedTypes\obj\Debug\UserDefinedTypes.dll
+C:\Users\pejci\source\repos\Baze2\UserDefinedTypes\obj\Debug\UserDefinedTypes.pdb

@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "DbBroker/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Domen": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DbBroker.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DbBroker.dll": {}
+        }
+      },
+      "Domen/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "compile": {
+          "bin/placeholder/Domen.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domen.dll": {}
+        }
+      },
+      "Kontroler/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DbBroker": "1.0.0",
+          "Domen": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Kontroler.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kontroler.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DbBroker/1.0.0": {
+      "type": "project",
+      "path": "../DbBroker/DbBroker.csproj",
+      "msbuildProject": "../DbBroker/DbBroker.csproj"
+    },
+    "Domen/1.0.0": {
+      "type": "project",
+      "path": "../Domen/Domen.csproj",
+      "msbuildProject": "../Domen/Domen.csproj"
+    },
+    "Kontroler/1.0.0": {
+      "type": "project",
+      "path": "../Kontroler/Kontroler.csproj",
+      "msbuildProject": "../Kontroler/Kontroler.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "Domen >= 1.0.0",
+      "Kontroler >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\pejci\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\pejci\\source\\repos\\Baze2\\Forme\\Forme.csproj",
+      "projectName": "Forme",
+      "projectPath": "C:\\Users\\pejci\\source\\repos\\Baze2\\Forme\\Forme.csproj",
+      "packagesPath": "C:\\Users\\pejci\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pejci\\source\\repos\\Baze2\\Forme\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\pejci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows7.0",
+          "projectReferences": {
+            "C:\\Users\\pejci\\source\\repos\\Baze2\\Domen\\Domen.csproj": {
+              "projectPath": "C:\\Users\\pejci\\source\\repos\\Baze2\\Domen\\Domen.csproj"
+            },
+            "C:\\Users\\pejci\\source\\repos\\Baze2\\Kontroler\\Kontroler.csproj": {
+              "projectPath": "C:\\Users\\pejci\\source\\repos\\Baze2\\Kontroler\\Kontroler.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

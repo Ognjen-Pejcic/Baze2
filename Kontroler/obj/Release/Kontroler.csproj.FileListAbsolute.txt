@@ -1,0 +1,13 @@
+C:\Users\pejci\source\repos\Baze2\Kontroler\obj\Release\Kontroler.csproj.AssemblyReference.cache
+C:\Users\pejci\source\repos\Baze2\Kontroler\obj\Release\Kontroler.csproj.CoreCompileInputs.cache
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Release\Kontroler.dll
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Release\Kontroler.pdb
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Release\Broker.dll
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Release\Domen.dll
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Release\UserDefinedTypes.dll
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Release\Broker.pdb
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Release\Domen.pdb
+C:\Users\pejci\source\repos\Baze2\Kontroler\bin\Release\UserDefinedTypes.pdb
+C:\Users\pejci\source\repos\Baze2\Kontroler\obj\Release\Kontroler.csproj.CopyComplete
+C:\Users\pejci\source\repos\Baze2\Kontroler\obj\Release\Kontroler.dll
+C:\Users\pejci\source\repos\Baze2\Kontroler\obj\Release\Kontroler.pdb

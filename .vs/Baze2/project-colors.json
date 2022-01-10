@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "83b87625-3444-4e50-be14-ab3ce2002e99": {
+      "ProjectGuid": "83b87625-3444-4e50-be14-ab3ce2002e99",
+      "DisplayName": "Broker",
+      "ColorIndex": 0
+    },
+    "3576475d-4553-4ae3-b4d0-a523a322d592": {
+      "ProjectGuid": "3576475d-4553-4ae3-b4d0-a523a322d592",
+      "DisplayName": "Forme",
+      "ColorIndex": 1
+    },
+    "e03fae09-a988-419b-85c1-a1e5de79851a": {
+      "ProjectGuid": "e03fae09-a988-419b-85c1-a1e5de79851a",
+      "DisplayName": "Domen",
+      "ColorIndex": 2
+    },
+    "192d8965-6196-4962-abbc-56c7b878bd20": {
+      "ProjectGuid": "192d8965-6196-4962-abbc-56c7b878bd20",
+      "DisplayName": "Kontroler",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "be8aa4f4-5b59-4845-a119-0930ea0b317c": {
+      "ProjectGuid": "be8aa4f4-5b59-4845-a119-0930ea0b317c",
+      "DisplayName": "DbBroker",
+      "ColorIndex": 4
+    },
+    "5cc81f96-62f3-44fb-81c7-d48b56288a80": {
+      "ProjectGuid": "5cc81f96-62f3-44fb-81c7-d48b56288a80",
+      "DisplayName": "Frm",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
