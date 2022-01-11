@@ -43,6 +43,120 @@ namespace Kontroler
             }
         }
 
+        public bool IzmeniStavku(StavkaFakture stavka)
+        {
+            broker.OpenConnection();
+            broker.BeginTransaction();
+            try
+            {
+                broker.Azuriraj(stavka);
+                broker.Commit();
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                broker.Rollback();
+                return false;
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
+        public object VratiFakture()
+        {
+            broker.OpenConnection();
+            broker.BeginTransaction();
+            try
+            {
+                var faktura = broker.VratiSve(new Faktura()).Cast<Faktura>().ToList();
+                foreach (var f in faktura)
+                {
+                    f.Stavke = broker.VratiSve(new StavkaFakture
+                    {
+                        Faktura = f
+                    }).Cast<StavkaFakture>()
+                      .ToList();  
+                }
+                broker.Commit();
+                return faktura;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
+        public void IzmeniFakturu(Faktura faktura)
+        {
+            broker.OpenConnection();
+            broker.BeginTransaction();
+            try
+            {
+                broker.Azuriraj(faktura);
+                broker.Commit();
+
+            }
+            catch (Exception e)
+            {
+                broker.Rollback();
+                MessageBox.Show(e.ToString());  
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
+        public bool UnesiStavku(StavkaFakture stavka)
+        {
+            broker.OpenConnection();
+            broker.BeginTransaction();
+            try
+            {
+                broker.Sacuvaj(stavka);
+                broker.Commit();
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                broker.Rollback();
+                return false;
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
+        public bool IzbrisiStavku(StavkaFakture stavka)
+        {
+            broker.OpenConnection();
+            broker.BeginTransaction();
+            try
+            {
+                var prodavci = broker.Izbrisi(stavka);
+                broker.Commit();
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message); 
+                return false;
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
         public object VratiProdavacKontakt()
         {
             broker.OpenConnection();

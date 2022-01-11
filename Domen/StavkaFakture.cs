@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,25 +12,46 @@ namespace Domen
     {
         public int StavkaFaktureId { get; set; }
         public Faktura Faktura { get; set; }
-        public double Kolicina{ get; set; }
-        public string NasBroj { get; set; }
+        public decimal Kolicina{ get; set; }
+        public decimal Iznos{ get; set; }
         public Proizvod Proizvod{ get; set; }
 
-        public string NazivTabele => throw new NotImplementedException();
-
-        public string InsertVrednosti => throw new NotImplementedException();
-
-        public string UpdateVrednosti => throw new NotImplementedException();
-
-        public string Join => throw new NotImplementedException();
-
-        public string Where => throw new NotImplementedException();
-
-        public string SelectVrednosti => throw new NotImplementedException();
+        [Browsable(false)]
+        public string NazivTabele => "StavkaFakture";
+        [Browsable(false)]
+        public string InsertVrednosti => $"{Faktura.FakturaId},  {Kolicina}, {Iznos}, {Proizvod.ProizvodaId} ";
+        [Browsable(false)]
+        public string UpdateVrednosti => $"iznos = {Iznos}, kolicina = {Kolicina}";
+        [Browsable(false)]
+        public string Join => $"s join faktura f on (s.fakturaId = f.fakturaId) join proizvod p on (p.proizvodid = s.proizvodId) where s.fakturaId={Faktura.FakturaId}";
+        [Browsable(false)]
+        public string Where => $"stavkafaktureid = {StavkaFaktureId} and fakturaId = {Faktura.FakturaId}";
+        [Browsable(false)]
+        public string SelectVrednosti => "*";
 
         public List<DomenskiObjekat.DomenskiObjekat> GetReaderResult(SqlDataReader reader)
         {
-            throw new NotImplementedException();
+            List<DomenskiObjekat.DomenskiObjekat> result = new List<DomenskiObjekat.DomenskiObjekat>();
+            while (reader.Read())
+            {
+                StavkaFakture s = new StavkaFakture();
+                s.StavkaFaktureId = reader.GetInt32(0);
+                Faktura f = new Faktura();
+                f.FakturaId = reader.GetInt32(1);
+                s.Faktura = f;
+
+                s.Kolicina = reader.GetDecimal(2);
+                s.Iznos = reader.GetDecimal(3); 
+
+                Proizvod p = new Proizvod();
+                p.ProizvodaId = reader.GetInt32(4);
+                p.NazivProizvoda =reader.GetString(14);
+
+                s.Proizvod = p;
+
+                result.Add(s);
+            }
+            return result;
         }
     }
 }

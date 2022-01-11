@@ -33,5 +33,9 @@ namespace Domen
         {
             throw new System.NotImplementedException();
         }
+        public override string ToString()
+        {
+            return ImeKupca + " " + PrezimeKupca;
+        }
     }
 }
