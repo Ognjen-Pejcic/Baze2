@@ -22,7 +22,7 @@ namespace Domen
         [Browsable(false)]
         public string NazivTabele => "Prodavac_pogled";
         [Browsable(false)]
-        public string InsertVrednosti => $" {ProdavacId}, {Obelezja},'{NazivProdavca}', '{BrojTelefona}', '{EmailAdresa}', {Adresa.DrzavaId}, {Adresa.GradId}, {Adresa.UlicaId}, {Adresa.Broj}";
+        public string InsertVrednosti => $" {ProdavacId}, '{Obelezja}','{NazivProdavca}', '{BrojTelefona}', '{EmailAdresa}', {Adresa.DrzavaId}, {Adresa.GradId}, {Adresa.UlicaId}, {Adresa.Broj}";
         [Browsable(false)]
         public string UpdateVrednosti => $"obelezja = '{Obelezja}', nazivProdavca = '{NazivProdavca}', emailAdresa = '{EmailAdresa}', brojtelefona = '{BrojTelefona}', broj = {Adresa.Broj}, ulicaId = {Adresa.UlicaId}, drzavaId = {Adresa.DrzavaId}, postanskiBroj = {Adresa.GradId}";
         [Browsable(false)]

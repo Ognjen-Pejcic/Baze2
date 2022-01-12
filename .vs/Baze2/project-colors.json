@@ -35,7 +35,12 @@
       "ProjectGuid": "5cc81f96-62f3-44fb-81c7-d48b56288a80",
       "DisplayName": "Frm",
       "ColorIndex": 5
+    },
+    "ce9131e3-3c72-44af-9817-602e7da8d74a": {
+      "ProjectGuid": "ce9131e3-3c72-44af-9817-602e7da8d74a",
+      "DisplayName": "UserDefinedTypes",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

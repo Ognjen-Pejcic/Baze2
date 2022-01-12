@@ -43,6 +43,46 @@ namespace Kontroler
             }
         }
 
+        public object VratiStavkeGarancije()
+        {
+            broker.OpenConnection();
+            broker.BeginTransaction();
+            try
+            {
+                var stavke = broker.VratiSve(new StavkaGarancije()).Cast<StavkaGarancije>().ToList();
+                broker.Commit();
+                return stavke;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
+        public void IzmeniStavkuGarancije(StavkaGarancije stavka)
+        {
+            broker.OpenConnection();
+            broker.BeginTransaction();
+            try
+            {
+                broker.Azuriraj(stavka);
+                broker.Commit();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                broker.Rollback();
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
         public bool IzmeniStavku(StavkaFakture stavka)
         {
             broker.OpenConnection();
@@ -65,6 +105,26 @@ namespace Kontroler
             }
         }
 
+        public void InsertStavkeGarancije(StavkaGarancije s)
+        {
+            broker.OpenConnection();
+            broker.BeginTransaction();
+            try
+            {
+                broker.Sacuvaj(s);
+                broker.Commit();
+            }
+            catch (Exception)
+            {
+                broker.Rollback();
+
+            }
+            finally
+            {
+                broker.CloseConnection();
+            }
+        }
+
         public object VratiFakture()
         {
             broker.OpenConnection();
@@ -78,7 +138,7 @@ namespace Kontroler
                     {
                         Faktura = f
                     }).Cast<StavkaFakture>()
-                      .ToList();  
+                      .ToList();
                 }
                 broker.Commit();
                 return faktura;
@@ -106,7 +166,7 @@ namespace Kontroler
             catch (Exception e)
             {
                 broker.Rollback();
-                MessageBox.Show(e.ToString());  
+                MessageBox.Show(e.Message);
             }
             finally
             {
@@ -148,7 +208,7 @@ namespace Kontroler
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message); 
+                MessageBox.Show(e.Message);
                 return false;
             }
             finally
@@ -534,7 +594,7 @@ namespace Kontroler
             broker.BeginTransaction();
             try
             {
-               var prodavac = broker.VratiSve(new Prodavac());
+                var prodavac = broker.VratiSve(new Prodavac());
                 broker.Commit();
                 return prodavac.Cast<Prodavac>().ToList();
             }

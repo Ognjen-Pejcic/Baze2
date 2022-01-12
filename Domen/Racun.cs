@@ -16,7 +16,7 @@ namespace Domen
         public Prodavac Prodavac { get; set; }
 
         [Browsable(false)]
-        public string SelectVrednosti => "r.brojRacuna, b.bankaId, r.NazivBanke, p.prodavacId, p.nazivProdavca, p.obelezjaPrivrednogSubjekta.PIB as Pib, p.obelezjaPrivrednogSubjekta.MaticniBroj";
+        public string SelectVrednosti => "r.brojRacuna, b.bankaId, r.NazivBanke, p.prodavacId, p.nazivProdavca, p.obelezja.PIB as Pib, p.obelezja.MaticniBroj";
 
         public string NazivBanke { get; set; }
 
@@ -25,10 +25,10 @@ namespace Domen
         [Browsable(false)]
         string DomenskiObjekat.DomenskiObjekat.InsertVrednosti => $"'{BrojRacuna}', null,{Prodavac.ProdavacId}, {Banka.BankaId}";
         [Browsable(false)]
-        string DomenskiObjekat.DomenskiObjekat.UpdateVrednosti => $" nazivBanke = {NazivBanke} ";
+        string DomenskiObjekat.DomenskiObjekat.UpdateVrednosti => $" nazivBanke = '{NazivBanke}' ";
 
         [Browsable(false)]
-        string DomenskiObjekat.DomenskiObjekat.Join => $" r join banka b on (r.bankaId = b.bankaId) join prodavac p on (r.prodavacId = p.prodavacId) ";
+        string DomenskiObjekat.DomenskiObjekat.Join => $" r join banka b on (r.bankaId = b.bankaId) join prodavac_pogled p on (r.prodavacId = p.prodavacId) ";
         [Browsable(false)]
         string DomenskiObjekat.DomenskiObjekat.Where => $"brojRacuna = '{BrojRacuna}' and bankaid = {Banka.BankaId} and  prodavacid = {Prodavac.ProdavacId}";
         [Browsable(false)]
